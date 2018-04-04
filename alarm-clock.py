@@ -16,7 +16,7 @@ GPIO.setup(bin_low,GPIO.OUT,initial=GPIO.LOW)
 GPIO.setup(7,GPIO.IN,pull_up_down=GPIO.PUD_DOWN)
 
 pygame.mixer.init()
-pygame.mixer.music.load('getup.mp3')#自备音乐
+pygame.mixer.music.load('getup.mp3')
 
 D_zero=[31,32,33,35,36,37]
 D_one=[32,33]
@@ -56,14 +56,14 @@ def xianshi(shi,feng):
     display(22,feng_o)
     display(29,feng_t)
 
-def fan(num):#风扇（暂没有完成）
+def fan(num):
     GPIO.output(11,GPIO.HIGH)
     GPIO.output(12,GPIO.LOW)
     time.sleep(num)
     GPIO.output(11,GPIO.LOW)
     GPIO.output(13,GPIO.LOW)
 
-def light(num):#灯光
+def light(num):
 	GPIO.output(13,GPIO.LOW)
 	time.sleep(num)
 	GPIO.output(13,GPIO.HIGH)
