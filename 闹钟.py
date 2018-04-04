@@ -56,12 +56,12 @@ def xianshi(shi,feng):
     display(22,feng_o)
     display(29,feng_t)
 
-def fan(num):
-    GPIO.output(11,GPIO.HIGH)
-    GPIO.output(12,GPIO.LOW)
-    time.sleep(num)
-    GPIO.output(11,GPIO.LOW)
-    GPIO.output(13,GPIO.LOW)
+#def fan(num):
+#    GPIO.output(11,GPIO.HIGH)
+#    GPIO.output(12,GPIO.LOW)
+#    time.sleep(num)
+#    GPIO.output(11,GPIO.LOW)
+#    GPIO.output(13,GPIO.LOW)
 
 def light(num):
 	GPIO.output(13,GPIO.LOW)
